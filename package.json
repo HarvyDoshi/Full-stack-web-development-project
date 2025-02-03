@@ -1,5 +1,6 @@
 {
 <<<<<<< HEAD
+<<<<<<< HEAD
   "overrides": {
   "react": "18.3.1",
   "react-dom": "18.3.1"
@@ -9,6 +10,8 @@
     "@google/generative-ai": "^0.21.0",
     "dotenv": "^16.4.7"
 =======
+=======
+>>>>>>> master
   "name": "frontend",
   "private": true,
   "version": "0.0.0",
@@ -44,6 +47,9 @@
     "eslint-plugin-react-refresh": "^0.4.16",
     "typescript": "^5.7.2",
     "vite": "^6.0.5"
+<<<<<<< HEAD
 >>>>>>> 4874ae9 (added dist)
+=======
+>>>>>>> master
   }
 }

@@ -5,8 +5,13 @@ import { COOKIE_NAME } from "./constants.js";
 const JWT_SECRET = process.env.JWT_SECRET || "your_secret_key_here";
 
 // Token creation function
-export const createToken = (id: string, email: string, expiresIn: string) => {
+export const createToken = (
+  id: string,
+  email: string,
+  expiresIn: number | `${number}${"s" | "m" | "h" | "d"}`
+) => {
   const payload = { id, email };
+
   if (!JWT_SECRET) {
     throw new Error("JWT secret is not defined");
   }

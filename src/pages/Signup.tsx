@@ -23,11 +23,16 @@ const Signup = () => {
       toast.error("Signing Up Failed", { id: "signup" });
     }
   };
-  useEffect(() => {
+useEffect(() => {
+  const checkAuth = async () => {
     if (auth?.user) {
-      return navigate("/chat");
+      navigate("/chat");
     }
-  }, [auth,navigate]);
+  };
+
+  checkAuth();
+}, [auth, navigate]);
+
   return (
     <Box width={"100%"} height={"100%"} display="flex" flex={1}>
       <Box padding={8} mt={8} display={{ md: "flex", sm: "none", xs: "none" }}>
